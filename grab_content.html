@@ -1,0 +1,63 @@
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Grabber</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script>
+		function content() 
+		{
+			$.ajax({url:'test.html', success: function(result) {
+				$('#content').html(result);
+			} });
+		}
+		function get_talents()
+		{
+			var talent = {};
+			var talentNames = $('.talentNameStyle');
+			var talentDescriptions = $('.talentDescriptionStyle');
+			var talentRanks = $('.mySmallOff');
+			var contentTalents = '';
+
+			for (var i = 0; i < talentNames.length; i++) {
+				var talentRank = talentRanks[i].innerHTML.substr(talentRanks[i].innerHTML.indexOf('>/') + 2,2);
+				var requiresTalent = document.getElementById('requiresTalent' + i);
+				var requiresPoints = document.getElementById('requiresPoints' + i);
+				talent[i] = {};
+				contentTalents += 
+				'TalentName = ' + talentNames[i].innerHTML + '<br/>' + 
+				'TalentDescription = ' + talentDescriptions[i].innerHTML + '<br/>' + 
+				'TalentRank = ' + talentRank + '<br/>';
+
+				//grab required talents on tree
+				if (requiresTalent != 'undefined' && requiresTalent != null) {
+					var startIndex = requiresTalent.innerHTML.indexOf('r>');
+					requiresTalent = requiresTalent.innerHTML.substring(startIndex + 2) + '<br/>';
+					contentTalents += 'RequiredTalent = ' + requiresTalent + '<br/>';
+				}
+				//grab required points on tree
+				if (requiresPoints != 'undefined' && requiresPoints != null) {
+					var startIndex = requiresPoints.innerHTML.indexOf('r>');
+					requiresPoints = requiresPoints.innerHTML.substring(startIndex + 2) + '<br/>';
+					contentTalents += 'RequiredPoints = ' + requiresPoints + '<br/>';
+				}
+
+				talent[i]['name'] = talentNames[i].innerHTML;
+				talent[i]['description'] = talentDescriptions[i].innerHTML;
+				talent[i]['rank'] = talentRank;
+				talent[i]['requiredTalent'] = requiresTalent;
+				talent[i]['RequiredPoints'] = requiresPoints;
+
+				console.log(JSON.stringify(talent[i]));
+
+				contentTalents += '<br/>';
+			}
+
+			$('#talentNames').html(contentTalents);
+		}
+		</script>
+	</head>
+	<body onLoad="content()">
+		<div id="content" onclick="get_talents()"></div>
+		<div id="talentNames"></div>
+	</body>
+</html>

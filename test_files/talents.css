@@ -1,0 +1,274 @@
+.mySmallx                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 8pt; line-height: 11pt;}
+.mySmallBlack                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #000000; font-size: 8pt; line-height: 11pt;}
+.mySmallWhite                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 8pt; line-height: 11pt;}
+        table                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; font-size: 8pt; line-height: 11pt;}
+
+                #rankTopStyle { position: absolute;
+                        top: 33px;
+                        left: 28px;
+                        z-index: 100;
+       }
+
+                #descriptionTopStylex { position: absolute;
+                        top: 20px;
+                        left: 50px;
+                        z-index: 100;
+      }
+
+                #descriptionTopStyleThirdx { position: absolute;
+                        top: 20px;
+                        left: -350px;
+                        z-index: 100;
+       }
+
+                #descriptionTopStyleBottom { position: absolute;
+                        top: -60px;
+                        left: 50px;
+                        z-index: 100;
+       }
+
+                #descriptionTopStyleThirdBottom { position: absolute;
+                        top: -60px;
+                        left: -350px;
+                        z-index: 100;
+       }
+
+                #takeUpNoSpace { position: absolute;
+                        z-index: 100;
+       }
+
+                #wrapper { position: relative;
+                        z-index: 100;
+       }
+
+                #talentThumbStyle { position: absolute;
+                        top: 0px;
+       }
+
+                #iconOver { position: absolute;
+                        top: -2px;
+                        left: -2px;
+       }
+
+                #wrapper99 { position: relative;
+                        z-index: 99;
+       }
+
+                #wrapper51 { position: relative;
+                        z-index: 51;
+       }
+
+                #wrapper49 { position: absolute;
+                        z-index: 49;
+       }
+
+                #wrapper50 { position: relative;
+                        z-index: 50;
+       }
+
+                #arrowdown1 { position: absolute;
+                        top: -20px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                #arrowdown2 { position: absolute;
+                        top: -85px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                #arrowdown3 { position: absolute;
+                        top: -150px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                #arrowdown4 { position: absolute;
+                        top: -215px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                #arrowacrossright { position: absolute;
+                        top: 15px;
+                        left: -20px;
+                        z-index: 100;
+       }
+
+                   #arrowacrossleft { position: absolute;
+                        top: 12px;
+                        left: 39px;
+                        z-index: 100;
+       }
+
+                #arrowdownleft { position: absolute;
+                        top: -47px;
+                        left: 10px;
+                        z-index: 100;
+       }
+
+
+                #arrowdownright { position: absolute;
+                        top: -47px;
+                        left: -20px;
+                        z-index: 100;
+       }
+
+                #tabs { position: absolute;
+                        top: -14px;
+                        z-index: 30;
+       }
+
+                #tabsUp { position: absolute;
+                        top: -14px;
+                        z-index: 30;
+                        }
+
+#iconOverParchment{
+position: absolute;
+z-index: 100;
+
+}
+
+        #alignLeft{text-align:left;float:left;color:ffffff;}
+        #alignRight{text-align:right;float:right;color:ffffff;}
+
+
+
+
+
+
+/*
+.tabletopleft { width: 14; height: 13; background-image:url(data/images/top-left.gif); }
+.tabletop { background-image:url(images/top.gif)}
+.tabletopright { width: 19; height: 13; background-image:url(images/top-right.gif)}
+.tableleft { width: 14; background-image:url(images/left.gif)}
+.tablebotleft { width: 14; height: 40; background-image:url(images/bot-left.gif)}
+.tablebot { background-image:url(images/bot.gif)}
+.tableright { background-image:url(images/right.gif)}
+.tablebotright { width: 14; height: 40; background-image:url(images/bot-right.gif) }
+.tablebotrightright { width: 4; height: 40; background-image:url(images/bot-right-right.gif)}
+.tablebotleftleft { width: 4; height: 40; background-image:url(images/bot-left-left.gif)}
+*/
+
+
+table { font-size: 12px; }
+
+.treePadding {padding: 0px 10px 0 10px;}
+.talenttreename { height:27px; line-height:27px; position: relative; left: -3px;}
+.talenttreeicon { width:27px; height:27px; position: relative; left: 4px; }
+img.p {behavior: url("/shared/wow-com/includes-client/pngBehavior.htc");}
+
+#rmwt{margin-top:6px; _margin-top:20px;}
+
+.treeName {color: #ffe400; font-weight: bold; font-size: 14px; }
+.treeColon {color: #FFFFFF; font-size: 12px;}
+.treePoint {color: #FFFFFF; font-size: 12px;}
+.treePoints {color: #FFFFFF; font-size: 12px;}
+
+.rankTooltip                { font-family: "Tahoma", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 11px;}
+.mySmallx                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 11px; line-height: 11pt;}
+.mySmall2                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffd100; font-size: 11px; line-height: 11pt;}
+.mySmallOff                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 11px; line-height: 11pt;}
+.mySmall22                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffd100; font-size: 11px; line-height: 11pt;}
+.mySmallOff2                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #ffffff; font-size: 11px; line-height: 11pt;}
+.mySmallGreen                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #1aff1a; font-size: 11px; position: relative;}
+.mySmallGreen2                 { font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif"; color: #1aff1a; font-size: 11px; position: relative;}
+
+                .arrowdown1 { position: absolute;
+                        top: -20px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                .arrowdown2 { position: absolute;
+                        top: -85px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                .arrowdown3 { position: absolute;
+                        top: -150px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                .arrowdown4 { position: absolute;
+                        top: -215px;
+                        left: 11px;
+                        z-index: 100;
+       }
+
+                .arrowacrossright { position: absolute;
+                        top: 15px;
+                        left: -20px;
+                        z-index: 100;
+       }
+
+                .arrowdownleft { position: absolute;
+                        top: -47px;
+                        left: 10px;
+                        z-index: 100;
+       }
+
+                .arrowacrossleft { position: absolute;
+                        top: 12px;
+                        left: 39px;
+                        z-index: 100;
+       }
+
+                .arrowdownright { position: absolute;
+                        top: -47px;
+                        left: -20px;
+                        z-index: 100;
+       }
+
+
+
+.talentDescriptionStyle {
+ font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif";
+ font-color: #ffd800;
+ color: #ffd800;
+ font-size: 8pt;
+ line-height: 11pt;
+}
+
+.talentName {
+ font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif";
+ font-color: #ffd800;
+ color: #ffd800;
+ font-size: 18pt;
+}
+a:link                {
+                        font-family: arial,verdana, sans-serif;
+                        color: CBA300;
+                        }
+
+a:visited         {
+                        font-family: arial,verdana, sans-serif;
+                        color: CBA300;
+                        }
+
+a:hover                {
+                        font-family: arial,verdana, sans-serif;
+                        color: FFFFFF;
+                        }
+
+a:active         {
+                        font-family: arial,verdana, sans-serif;
+                        color: CBA300;
+                        }
+
+.x1{
+        display:inline;
+        float:left;
+        margin-left:10px;
+}
+
+.x2{
+ font-family: "Verdana", "Arial", "Helvetica", "Sans-Serif";
+ font-color: #ffd800;
+ color: #ffd800;
+ font-size: 16pt;
+}

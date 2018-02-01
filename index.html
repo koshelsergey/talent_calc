@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; Charset=UTF-8">
+		<script type="text/javascript" src="jquery-2.2.4.js"></script>
+	</head>
+	<body>
+		<form id="myForm">  
+	    Введите имя:<br/>  
+	        <input id="username" type="text" size="20"><br/><br/>  
+	        <input type="submit" value="Отправить">  
+	    </form>  
+	      
+	    <div id="content" onClick="getTalents()"></div>  
+	      
+	    <script>  
+	        $(document).ready(function(){  
+	          
+	            $('#myForm').submit(function(){  
+	                $.ajax({  
+	                    type: "POST",  
+	                    url: "goha.html",  
+	                    data: "username="+$("#username").val(),  
+	                    success: function(html){  
+	                        $("#content").html(html);  
+	                    }  
+	                });  
+	                return false;  
+	            });  
+	              
+	        });  
+	    </script>
+	    <script>
+	    	function getTalents()
+	    	{
+	    		var htmlNew = '';
+	    		for (var i = 0; i < 10; i++) {
+	    			var x = $('#armoryOver' + i + ' span.TalentNameStyle')[0].innerHTML;
+	    			htmlNew += x;
+					console.log(x);
+	    		}
+	    		$('#content').html(htmlNew);
+	    	}
+	    </script>
+	</body>
+</html>
